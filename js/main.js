@@ -26,6 +26,38 @@
     });
   }
 
+  /* ---- Services dropdown ---- */
+  var ddItems = Array.prototype.slice.call(document.querySelectorAll(".nav-item.has-dropdown"));
+  ddItems.forEach(function (item) {
+    var link = item.querySelector(".nav-link");
+    if (!link) { return; }
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      var open = item.classList.toggle("open");
+      link.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+  if (ddItems.length) {
+    document.addEventListener("click", function (e) {
+      ddItems.forEach(function (item) {
+        if (!item.contains(e.target)) {
+          item.classList.remove("open");
+          var l = item.querySelector(".nav-link");
+          if (l) { l.setAttribute("aria-expanded", "false"); }
+        }
+      });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        ddItems.forEach(function (item) {
+          item.classList.remove("open");
+          var l = item.querySelector(".nav-link");
+          if (l) { l.setAttribute("aria-expanded", "false"); }
+        });
+      }
+    });
+  }
+
   /* ---- Header shadow + back-to-top ---- */
   function onScroll() {
     var y = window.scrollY;

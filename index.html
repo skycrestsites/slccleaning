@@ -26,14 +26,14 @@
   <meta property="og:description" content="Reliable, high-quality residential and commercial cleaning across Salt Lake City. Background-checked, 5-star rated, locally owned. Request your free quote today." />
   <meta property="og:url" content="https://slcpremiercleaning.com/" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://slcpremiercleaning.com/assets/hero.jpg" />
-  <meta property="og:image:alt" content="A professional cleaner detailing a bright, freshly cleaned home." />
+  <meta property="og:image" content="https://slcpremiercleaning.com/assets/hero.png" />
+  <meta property="og:image:alt" content="A spotless, freshly cleaned open-plan kitchen in a Salt Lake City home." />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="House Cleaning Services in Salt Lake City, UT | SLC Premier Cleaning Co." />
   <meta name="twitter:description" content="Reliable residential and commercial cleaning across Salt Lake City. Background-checked, 5-star rated, locally owned." />
-  <meta name="twitter:image" content="https://slcpremiercleaning.com/assets/hero.jpg" />
+  <meta name="twitter:image" content="https://slcpremiercleaning.com/assets/hero.png" />
 
   <!-- Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -52,7 +52,7 @@
     "@context": "https://schema.org",
     "@type": "HouseCleaningService",
     "name": "SLC Premier Cleaning Co.",
-    "image": "https://slcpremiercleaning.com/assets/hero.jpg",
+    "image": "https://slcpremiercleaning.com/assets/hero.png",
     "url": "https://slcpremiercleaning.com/",
     "email": "hello@slcpremiercleaning.com",
     "priceRange": "$$",
@@ -130,7 +130,23 @@
       </a>
 
       <nav class="nav" id="nav" aria-label="Primary">
-        <a href="#services">Services</a>
+        <div class="nav-item has-dropdown">
+          <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Services
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown">
+            <a class="dd-all" href="#services">All services</a>
+            <a href="services/standard-cleaning/">Standard Cleaning</a>
+            <a href="services/deep-cleaning/">Deep Cleaning</a>
+            <a href="services/recurring-cleaning/">Recurring Cleaning</a>
+            <a href="services/move-in-out-cleaning/">Move-In / Move-Out</a>
+            <a href="services/commercial-cleaning/">Commercial Cleaning</a>
+            <a href="services/post-construction-cleaning/">Post-Construction</a>
+            <a href="services/airbnb-str-cleaning/">Airbnb / STR Turnover</a>
+            <a href="services/add-on-services/">Add-On Services</a>
+          </div>
+        </div>
         <a href="#why">Why us</a>
         <a href="#results">Results</a>
         <a href="#plans">Plans</a>
@@ -149,10 +165,11 @@
 
     <!-- ===== Hero ===== -->
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Salt Lake City &amp; surrounding areas</p>
-          <h1>Elevating clean for homes and businesses across Salt&nbsp;Lake&nbsp;City.</h1>
+          <h1>Elevating clean for homes and businesses across <span class="hl">Salt&nbsp;Lake&nbsp;City</span>.</h1>
           <p class="lead">Reliable, detail-focused cleaning from a locally owned team you can trust. We handle the scrubbing so busy homeowners, families and businesses get their time back.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#book">Book now</a>
@@ -175,10 +192,15 @@
         </div>
 
         <div class="hero-media">
-          <img src="assets/hero.jpg" width="1600" height="1067" alt="A professional cleaner wiping down a bright kitchen counter in a Salt Lake City home" fetchpriority="high" />
+          <div class="hero-media-frame">
+            <img src="assets/hero.png" width="1024" height="683" alt="A spotless, freshly cleaned open-plan kitchen in a Salt Lake City home" fetchpriority="high" />
+          </div>
           <div class="hero-badge">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <span>Loved by local homeowners and property managers</span>
+            <span class="hero-badge-stars" aria-hidden="true">★★★★★</span>
+            <div>
+              <strong>5-star rated</strong>
+              <span>Loved by local homeowners &amp; property managers</span>
+            </div>
           </div>
         </div>
       </div>
@@ -215,6 +237,7 @@
             </span>
             <h3>Standard Cleaning</h3>
             <p>Routine cleaning to keep your home fresh: dusting, vacuuming, mopping, kitchen surfaces, bathrooms and general tidying.</p>
+            <a class="card-link" href="services/standard-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -223,6 +246,7 @@
             </span>
             <h3>Deep Cleaning</h3>
             <p>A detailed, top-to-bottom clean that targets buildup, baseboards, fixtures and the hard-to-reach spots that get overlooked.</p>
+            <a class="card-link" href="services/deep-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -231,6 +255,7 @@
             </span>
             <h3>Recurring Cleaning</h3>
             <p>Weekly, bi-weekly or monthly service that keeps your home consistently clean without scheduling every visit yourself.</p>
+            <a class="card-link" href="services/recurring-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -239,6 +264,7 @@
             </span>
             <h3>Move-In / Move-Out</h3>
             <p>Thorough cleaning for empty or transitioning homes, prepared for new occupants, landlords or a smooth deposit return.</p>
+            <a class="card-link" href="services/move-in-out-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -247,6 +273,7 @@
             </span>
             <h3>Commercial Cleaning</h3>
             <p>Customized cleaning for offices, retail and other commercial properties, keeping your space professional and welcoming.</p>
+            <a class="card-link" href="services/commercial-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -255,6 +282,7 @@
             </span>
             <h3>Post-Construction</h3>
             <p>Detailed removal of construction dust, debris and residue so newly built or renovated spaces are ready for use.</p>
+            <a class="card-link" href="services/post-construction-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -263,6 +291,7 @@
             </span>
             <h3>Airbnb / STR Turnover</h3>
             <p>Reliable turnover cleaning between guests, resetting the property so it is spotless and ready for the next stay.</p>
+            <a class="card-link" href="services/airbnb-str-cleaning/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
 
           <article class="card">
@@ -271,6 +300,7 @@
             </span>
             <h3>Add-On Services</h3>
             <p>Inside the fridge or oven, interior windows, cabinets, dishes, laundry and more can be added to any clean.</p>
+            <a class="card-link" href="services/add-on-services/">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </article>
         </div>
       </div>

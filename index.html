@@ -9,9 +9,17 @@
   <meta name="description" content="SLC Premier Cleaning Co. provides reliable house cleaning, deep cleaning, recurring, move-out and commercial cleaning across Salt Lake City and surrounding areas. Background-checked, 5-star rated and locally owned. Request a free quote." />
   <meta name="keywords" content="house cleaning service Salt Lake City, home cleaning Salt Lake City, maid service Salt Lake City, deep cleaning, move out cleaning, recurring cleaning, commercial cleaning Salt Lake City, Airbnb turnover cleaning, cleaning services near me" />
   <meta name="author" content="SLC Premier Cleaning Co." />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://slcpremiercleaning.com/" />
   <meta name="theme-color" content="#282c80" />
+  <meta name="apple-mobile-web-app-title" content="SLC Premier Cleaning" />
+
+  <!-- Performance hints -->
+  <link rel="preload" as="image" href="assets/hero.png" fetchpriority="high" />
+  <link rel="preconnect" href="https://slcpremiercleaning.bookingkoala.com" crossorigin />
+  <link rel="dns-prefetch" href="https://slcpremiercleaning.bookingkoala.com" />
+  <link rel="manifest" href="site.webmanifest" />
 
   <!-- Local / Geo SEO -->
   <meta name="geo.region" content="US-UT" />
@@ -27,6 +35,9 @@
   <meta property="og:url" content="https://slcpremiercleaning.com/" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="https://slcpremiercleaning.com/assets/hero.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="683" />
   <meta property="og:image:alt" content="A spotless, freshly cleaned open-plan kitchen in a Salt Lake City home." />
 
   <!-- Twitter -->
@@ -46,67 +57,136 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Structured data: LocalBusiness -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HouseCleaningService",
-    "name": "SLC Premier Cleaning Co.",
-    "image": "https://slcpremiercleaning.com/assets/hero.png",
-    "url": "https://slcpremiercleaning.com/",
-    "email": "hello@slcpremiercleaning.com",
-    "priceRange": "$$",
-    "slogan": "Elevating Clean",
-    "description": "Reliable, high-quality residential and commercial cleaning services across Salt Lake City and surrounding areas.",
-    "areaServed": [
-      { "@type": "City", "name": "Salt Lake City" },
-      { "@type": "City", "name": "Sugar House" },
-      { "@type": "City", "name": "Millcreek" },
-      { "@type": "City", "name": "Holladay" },
-      { "@type": "City", "name": "Cottonwood Heights" },
-      { "@type": "City", "name": "Sandy" },
-      { "@type": "City", "name": "Draper" },
-      { "@type": "City", "name": "South Jordan" },
-      { "@type": "City", "name": "West Jordan" },
-      { "@type": "City", "name": "Murray" },
-      { "@type": "City", "name": "Bountiful" }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Salt Lake City",
-      "addressRegion": "UT",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.760780,
-      "longitude": -111.891045
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "08:00",
-        "closes": "18:00"
+        "@type": "WebSite",
+        "@id": "https://slcpremiercleaning.com/#website",
+        "url": "https://slcpremiercleaning.com/",
+        "name": "SLC Premier Cleaning Co.",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://slcpremiercleaning.com/#business" }
+      },
+      {
+        "@type": ["HouseCleaningService", "LocalBusiness"],
+        "@id": "https://slcpremiercleaning.com/#business",
+        "name": "SLC Premier Cleaning Co.",
+        "image": "https://slcpremiercleaning.com/assets/hero.png",
+        "logo": "https://slcpremiercleaning.com/assets/favicon.svg",
+        "url": "https://slcpremiercleaning.com/",
+        "email": "hello@slcpremiercleaning.com",
+        "telephone": "+1-801-000-0000",
+        "priceRange": "$$",
+        "slogan": "Elevating Clean",
+        "foundingDate": "2025",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card",
+        "description": "Reliable, high-quality residential and commercial cleaning services across Salt Lake City and surrounding areas. Background-checked, 5-star rated and locally owned.",
+        "knowsAbout": ["House cleaning", "Deep cleaning", "Move-out cleaning", "Recurring cleaning", "Commercial cleaning", "Post-construction cleaning", "Airbnb turnover cleaning", "Maid service"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Salt Lake City",
+          "addressRegion": "UT",
+          "postalCode": "84101",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.760780,
+          "longitude": -111.891045
+        },
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 40.760780, "longitude": -111.891045 },
+          "geoRadius": 40000
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Salt Lake City", "sameAs": "https://en.wikipedia.org/wiki/Salt_Lake_City" },
+          { "@type": "Place", "name": "Downtown Salt Lake City" },
+          { "@type": "Place", "name": "The Avenues" },
+          { "@type": "Place", "name": "Sugar House" },
+          { "@type": "City", "name": "Millcreek" },
+          { "@type": "City", "name": "Holladay" },
+          { "@type": "City", "name": "Cottonwood Heights" },
+          { "@type": "City", "name": "Murray" },
+          { "@type": "City", "name": "Midvale" },
+          { "@type": "City", "name": "Sandy" },
+          { "@type": "City", "name": "Draper" },
+          { "@type": "City", "name": "South Jordan" },
+          { "@type": "City", "name": "West Jordan" },
+          { "@type": "City", "name": "Bountiful" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Cleaning Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Standard Cleaning", "url": "https://slcpremiercleaning.com/services/standard-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Cleaning", "url": "https://slcpremiercleaning.com/services/deep-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recurring Cleaning", "url": "https://slcpremiercleaning.com/services/recurring-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Move-In / Move-Out Cleaning", "url": "https://slcpremiercleaning.com/services/move-in-out-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Cleaning", "url": "https://slcpremiercleaning.com/services/commercial-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Post-Construction Cleaning", "url": "https://slcpremiercleaning.com/services/post-construction-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Airbnb / STR Turnover Cleaning", "url": "https://slcpremiercleaning.com/services/airbnb-str-cleaning/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Add-On Services", "url": "https://slcpremiercleaning.com/services/add-on-services/" } }
+          ]
+        },
+        "review": [
+          { "@type": "Review", "author": { "@type": "Person", "name": "Sarah M." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Super easy to book and the cleaning team did an amazing job. They showed up on time, were professional, and left the entire house looking spotless." },
+          { "@type": "Review", "author": { "@type": "Person", "name": "Jessica R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "The best experience I have had with a cleaning company. Communication was great, pricing was straightforward, and my home looked incredible afterward." },
+          { "@type": "Review", "author": { "@type": "Person", "name": "Michael T." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "We booked a deep clean and were extremely impressed. They paid attention to the little details and got areas cleaner than we expected." }
+        ]
       }
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Cleaning Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Standard Cleaning" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Cleaning" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recurring Cleaning" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Move-In / Move-Out Cleaning" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Cleaning" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Post-Construction Cleaning" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vacation Rental / Airbnb Cleaning" } }
-      ]
-    },
-    "review": [
-      { "@type": "Review", "author": { "@type": "Person", "name": "Sarah M." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Super easy to book and the cleaning team did an amazing job. They showed up on time, were professional, and left the entire house looking spotless." },
-      { "@type": "Review", "author": { "@type": "Person", "name": "Jessica R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "The best experience I have had with a cleaning company. Communication was great, pricing was straightforward, and my home looked incredible afterward." },
-      { "@type": "Review", "author": { "@type": "Person", "name": "Michael T." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "We booked a deep clean and were extremely impressed. They paid attention to the little details and got areas cleaner than we expected." }
+    ]
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What areas around Salt Lake City do you serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We serve Salt Lake City and the surrounding Salt Lake Valley, including Downtown, The Avenues, Sugar House, Millcreek, Holladay, Cottonwood Heights, Murray, Midvale, Sandy, Draper, South Jordan, West Jordan and Bountiful. Not sure if you are in range? Reach out and we will confirm right away." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does house cleaning cost in Salt Lake City?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Every home is different, so your price depends on the size of your space, its condition and how often you would like service. We provide a straightforward, upfront quote before we start, and recurring plans come with locked-in rates. Request a free quote to see your starting price." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your cleaners background-checked and insured?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. SLC Premier Cleaning Co. is locally owned and every cleaner is background-checked and trained. We treat your home and business with professional care on every visit." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer recurring cleaning plans?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We offer weekly, bi-weekly and monthly recurring plans, plus one-time standard, deep, move-in and move-out, post-construction and Airbnb turnover cleans." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you bring your own cleaning supplies?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, our team arrives fully equipped with professional supplies and equipment. If you have specific product preferences, just let us know and we are happy to accommodate." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I book a cleaning?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You can book online in a few clicks using our booking tool, or request a free quote and we will get right back to you." }
+      }
     ]
   }
   </script>
@@ -453,6 +533,7 @@
           <p class="eyebrow">06 / Where we clean</p>
           <h2>Proudly serving Salt Lake City and nearby communities</h2>
           <p>If you are in the Salt Lake Valley, we most likely clean your neighborhood. Not sure if you are in range? Reach out and we will let you know right away.</p>
+          <p class="areas-zips">Serving Salt Lake City ZIP codes including 84101, 84102, 84103, 84105, 84106, 84108, 84109, 84111, 84115, 84117, 84121 and 84124, plus nearby communities across the valley.</p>
         </div>
         <ul class="areas-list">
           <li>Salt Lake City</li>
@@ -470,6 +551,43 @@
           <li>West Jordan</li>
           <li>Bountiful</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">07 / FAQ</p>
+          <h2>Salt Lake City cleaning questions, answered</h2>
+          <p class="section-sub">A few of the things local homeowners and businesses ask us most.</p>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What areas around Salt Lake City do you serve?</summary>
+            <div class="faq-a"><p>We serve Salt Lake City and the surrounding Salt Lake Valley, including Downtown, The Avenues, Sugar House, Millcreek, Holladay, Cottonwood Heights, Murray, Midvale, Sandy, Draper, South Jordan, West Jordan and Bountiful. Not sure if you are in range? Reach out and we will confirm right away.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How much does house cleaning cost in Salt Lake City?</summary>
+            <div class="faq-a"><p>Every home is different, so your price depends on the size of your space, its condition and how often you would like service. We provide a straightforward, upfront quote before we start, and recurring plans come with locked-in rates. Request a free quote to see your starting price.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Are your cleaners background-checked and insured?</summary>
+            <div class="faq-a"><p>Yes. SLC Premier Cleaning Co. is locally owned and every cleaner is background-checked and trained. We treat your home and business with professional care on every visit.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer recurring cleaning plans?</summary>
+            <div class="faq-a"><p>Absolutely. We offer weekly, bi-weekly and monthly recurring plans, plus one-time standard, deep, move-in and move-out, post-construction and Airbnb turnover cleans.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you bring your own cleaning supplies?</summary>
+            <div class="faq-a"><p>Yes, our team arrives fully equipped with professional supplies and equipment. If you have specific product preferences, just let us know and we are happy to accommodate.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How do I book a cleaning?</summary>
+            <div class="faq-a"><p>You can book online in a few clicks using our booking tool, or request a free quote and we will get right back to you.</p></div>
+          </details>
+        </div>
       </div>
     </section>
 
@@ -599,6 +717,7 @@
           <li><a href="#results">Results</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#areas">Service areas</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#book">Book online</a></li>
           <li><a href="#contact">Free quote</a></li>
         </ul>

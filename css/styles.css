@@ -346,6 +346,27 @@ p { margin: 0 0 1rem; }
   border: 0;
 }
 
+/* ---------- Areas extra ---------- */
+.areas-zips { font-size: .92rem; color: var(--muted); margin-top: 1rem; }
+
+/* ---------- FAQ ---------- */
+.faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: .8rem; }
+.faq-item { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; }
+.faq-item summary {
+  list-style: none; cursor: pointer; padding: 1.1rem 1.3rem;
+  font-weight: 700; color: var(--ink); font-size: 1.02rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+"; font-size: 1.5rem; color: var(--navy); font-weight: 400; line-height: 1;
+  transition: transform .25s var(--ease); flex: none;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item summary:hover { color: var(--navy); }
+.faq-a { padding: 0 1.3rem 1.2rem; color: var(--muted); }
+.faq-a p { margin: 0; font-size: .98rem; }
+
 /* ---------- Contact ---------- */
 .contact { background: linear-gradient(180deg, #ffffff, #f5f6fb); }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }

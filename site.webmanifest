@@ -1,0 +1,14 @@
+{
+  "name": "SLC Premier Cleaning Co.",
+  "short_name": "SLC Premier",
+  "description": "Reliable house, deep, recurring and commercial cleaning in Salt Lake City, UT.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#282c80",
+  "lang": "en-US",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

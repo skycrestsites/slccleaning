@@ -1,0 +1,17 @@
+# Client questionnaire data (contains personal info, keep out of the repo)
+Fillout Cleaning - Website Questionnaire results 2.csv
+
+# Separate template project with its own git history
+style 3/
+
+# Raw source images not used by the deployed site
+Stock images/
+
+# Temp preview/screenshot artifacts
+assets/_*.png
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

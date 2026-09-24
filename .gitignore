@@ -6,6 +6,7 @@ style 3/
 
 # Raw source images not used by the deployed site
 Stock images/
+slclogo.PNG
 
 # Temp preview/screenshot artifacts
 assets/_*.png
